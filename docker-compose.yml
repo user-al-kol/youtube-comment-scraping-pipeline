@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: ytscraper
+      POSTGRES_PASSWORD: scrapemall
+      POSTGRES_DB: youtube_comments_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+        
+volumes:
+  postgres_data:
