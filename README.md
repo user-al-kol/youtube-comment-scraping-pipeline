@@ -9,7 +9,6 @@ The best way of usage is to create a Python virtual environment and install by u
 
 2) **Scraper**
 In the scraper script (youtube_comment_scraper.py) there is a section that deals with pop-up menus. In my case I faced some problems with pop-up menus and thus this part of the code was developed. You can adjust it according to your needs, change it, delete it or comment it out.
-
 In the same script you can go to the main function and insert the URL of the Youtube video whose comments you want to scrape. In the scrape_youtube_comments function you will find the argument max_comments which is set to 90. You can change it according to your needs. If you need less than 90 comments, no changes are required. If you exceed this number, maybe you'll need to adjust the code in the code block on line 46 or find another solution peculiar to your situation.
 
 3) **Automation**
